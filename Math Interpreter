@@ -1,0 +1,8 @@
+# Implement a program that prompts users for an arithmetic expression
+# Then calculates and outputs the results as a floating-point value
+# floating point value formatted to one decimal place
+# Assume the user's input will be formatted as x, y, z with one space between letters
+
+
+Formula = str(input("Math Problem: "))
+print("{:.1f}".format(eval(Formula), 1))
