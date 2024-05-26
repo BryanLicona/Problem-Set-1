@@ -1,0 +1,30 @@
+# Implement a program that prompts the user for the name of a file
+# Output that file's media type
+# case-insensitively for any suffixes
+# if the file's name ends with some other suffix or has not suffix output "application/octet-stream"
+
+def main():
+    file_name = input("File name: ")
+
+    x = file_name.strip().lower()
+
+    if ".gif" in x:
+        print("image/gif")
+    elif ".jpg" in x:
+        print("image/jpeg")
+    elif ".jpeg" in x:
+        print("image/jpeg")
+    elif ".png" in x:
+        print("image/png")
+    elif ".pdf" in x:
+        print("application/pdf")
+    elif ".txt" in x:
+        print("text/plain")
+    elif ".zip" in x:
+        print("application/zip")
+
+    else:
+        print("application/octet-stream")
+
+
+main()
