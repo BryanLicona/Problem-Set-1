@@ -1,0 +1,21 @@
+# prompts users for the answer to the 1) Great Question of Life
+# 2) the Universe & 3) Everything
+# Outputting 'Yes' if the user inputs '42'
+# Or (case-insensitively) 'forty-two' or forty two.
+# Otherwise output 'No'
+
+a = ("Yes")
+b = ("No")
+
+question = (input(("What is the Answer to the Great Question of Life, the Universe, and Everything?")).strip())
+
+
+if question.lower() == "42":
+    print(a)
+elif question.lower() == "forty-two":
+    print(a)
+elif question.lower() == "forty two":
+    print(a)
+else:
+    print(b)
+
